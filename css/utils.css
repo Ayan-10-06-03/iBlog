@@ -1,0 +1,81 @@
+
+:root{
+    --main-bg-color: brown;
+    --font1: 'Baloo Bhai 2', cursive;
+    --font2: 'Roboto', sans-serif;
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+
+/* ------------------------------------------------"iBlog" icon design------------------------------------- */
+.nav-left span strong {
+    font-size: 28px;
+    font-weight: 700;
+    color: white; /* Vibrant color to make it stand out */
+    padding: 5px 10px;
+    background: linear-gradient(45deg, #007BFF, #024b93); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-transform: uppercase;
+    display: inline-block;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+.form-input{
+    padding: 0px 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: var(--font1);
+}
+
+/* -----------------------------------------search button design---------------------------------------------*/
+.btn {
+    font-family: 'Roboto', sans-serif; /* Font for consistency */
+    padding: 5px 16px; /* Button padding */
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #007BFF; /* Primary blue color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #024b93; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.btn:active {
+    background-color: #004080; /* Darkest shade when active */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add focus shadow */
+}
+/*-----------------------------------------------------------------------------------------------------------*/

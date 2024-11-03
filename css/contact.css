@@ -1,0 +1,232 @@
+/*===========================================================utils================================================================*/
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    --main-bg-color: brown;
+    --font1: 'Baloo Bhai 2', cursive;
+    --font2: 'Roboto', sans-serif;
+}
+
+.max-width-1{
+    max-width: 89vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+
+/* ------------------------------------------------"iBlog" icon design------------------------------------- */
+.nav-left span strong {
+    font-size: 28px;
+    font-weight: 700;
+    color: white; /* Vibrant color to make it stand out */
+    padding: 5px 10px;
+    background: linear-gradient(45deg, #007BFF, #024b93); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-transform: uppercase;
+    display: inline-block;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+.form-input{
+    padding: 0px 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: var(--font1);
+}
+
+/* -----------------------------------------search button design---------------------------------------------*/
+.btn {
+    font-family: 'Roboto', sans-serif; /* Font for consistency */
+    padding: 5px 16px; /* Button padding */
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #007BFF; /* Primary blue color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #024b93; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.btn:active {
+    background-color: #004080; /* Darkest shade when active */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add focus shadow */
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*==========================================================================style===============================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    font-family: var(--font1);
+    height: 74px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav-left{
+    width: 1150px;
+    font-size: 20px;
+    display: flex;
+    font-family: var(--font2);
+}
+
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 3px; 
+    border-radius: 8px; 
+    background-color: #007BFF; 
+    color: white;
+}
+.nav-left ul li:hover{
+    background-color: #024b93;
+    transform: scale(1.05);
+}
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 100px;
+    font-size: 18px;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.content {
+    height: 395px;
+    flex-direction: column;
+    /* background-color: rgb(143, 143, 228); */
+    /* display: flex; */
+}
+.content::after{
+    content: "";
+    background-image: url('../img/background.jpg');
+    background-size: cover; /* Ensures image covers the content area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.15;
+    z-index: -1; /*Keeps the background behind the content*/
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between each element */
+    max-width: 600px; 
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px; /* Padding inside input and textarea */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Make input and textarea take full width */
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+.contact-form .submit {
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+.contact-form .submit:hover {
+    background-color: #024b93; /* Darker color on hover */
+}
+
+
+
+.home{
+    /* background-color: red; */
+    margin-top: 70px;
+}
+.home-article{
+    display: flex;
+    margin: 50px;
+}
+.home-article img{
+    width: 300px;
+}
+.home-article-content{
+    align-self: center;
+    padding: 0px 25px;
+}
+.home-article-content a{
+    text-decoration: none;
+}
+
+
+.footer {
+    height: 50px;
+    background-color: #007BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.footer a{
+    color: white;
+}

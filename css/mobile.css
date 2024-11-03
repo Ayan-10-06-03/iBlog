@@ -1,0 +1,32 @@
+@media screen and (max-width: 1150px){
+    .navigation{
+        flex-direction: column;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+
+    .nav-left{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-right{
+        display: none;
+    }
+
+    .home-article{
+        flex-direction: column;
+    }
+
+    .home-article-img{
+        text-align: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .home h2{
+        margin-top: 3500px;
+    }
+}

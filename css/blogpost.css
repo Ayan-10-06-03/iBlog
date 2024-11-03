@@ -1,0 +1,31 @@
+
+.content {
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    max-width: auto; /* Limit width to control line length */
+    margin: auto;
+    padding: 20px; /* Add padding for better readability */
+    word-wrap: break-word; /* Allows long words to break to the next line */
+}
+
+.content p {
+    line-height: 1.6; /* Increases readability with line spacing */
+    margin-bottom: 1em; /* Add spacing between paragraphs */
+}
+
+.row{
+    display: flex;
+}
+
+.more-post{
+    flex-direction: column;
+}
+
+.home h2{
+    margin-top: 800px;
+}
+.footer { 
+    position-anchor:initial; 
+    bottom: 0; 
+    width: 100%;
+}
